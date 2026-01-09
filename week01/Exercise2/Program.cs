@@ -51,7 +51,10 @@ class Program
         }
         else if (lastDigit < MINUS_GRADE && letterGrade != "F")
         {
-            letterGrade += "-";
+            if(gradePercentage < 100) // catch where 100 mod 10 is 0
+            {
+                  letterGrade += "-";
+            }
         }
 
         Console.WriteLine($"Letter Grade: {letterGrade}");
