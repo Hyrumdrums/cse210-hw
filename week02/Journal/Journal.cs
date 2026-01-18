@@ -17,7 +17,7 @@ public class Journal
     }
   }
   public void SaveToFile(string filename) {
-    using (StreamWriter writer = new StreamWriter(filename)) {
+    using (StreamWriter writer = new StreamWriter(filename, true)) {
       foreach (Entry entry in _entryList) {
         writer.WriteLine(entry.AsString());
       }

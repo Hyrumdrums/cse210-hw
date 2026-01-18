@@ -1,3 +1,8 @@
+// Dallin Layton
+// 2026-01-17
+// Journal Program
+// My creative addition includes preventing overwriting existing journal entries by appending new entries to the file.
+// I also auto dislpayed entries after loading them.
 using System;
 using System.Runtime.CompilerServices;
 
@@ -31,6 +36,7 @@ class Program
                     Console.Write(">");
                     string loadFilename = Console.ReadLine();
                     journal.LoadFromFile(loadFilename);
+                    journal.DisplayAllEntries();
                     break;
                 case "S":
                 case "4":
