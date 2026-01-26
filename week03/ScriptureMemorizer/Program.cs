@@ -1,3 +1,7 @@
+// Dallin Layton
+// 01/26/2026
+// My creative addition was to add the 'less' command
+// to allow users to unhide a hidden word.
 using System;
 
 class Program
