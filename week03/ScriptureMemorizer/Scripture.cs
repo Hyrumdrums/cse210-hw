@@ -37,6 +37,23 @@ public class Scripture
     }
   }
 
+  public void UnHideRandomWord()
+  {
+    int hiddenWordCount = CountHiddenWords();
+    if (hiddenWordCount == 0)
+    {
+      return;
+    }
+    foreach (Word word in _wordList)
+    {
+      if (word.IsHidden())
+      {
+        word.Show();
+        break;
+      }
+    }
+  }
+
   public int CountUnhiddenWords()
   {
     int count = 0;
@@ -48,6 +65,11 @@ public class Scripture
       }
     }
     return count;
+  }
+
+  public int CountHiddenWords()
+  {
+    return _wordList.Count - CountUnhiddenWords();
   }
 
   public string GetDisplayText()
