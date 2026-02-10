@@ -1,9 +1,6 @@
 // Dallin Layton - Feb 10, 2026
 // My creative addition was to measure the total time
 // the user spent in the program and display it on exit
-using System;
-using System.Runtime.Intrinsics.X86;
-
 class Program
 {
     static void Main(string[] args)
