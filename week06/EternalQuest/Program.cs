@@ -1,3 +1,6 @@
+// Dallin Layton Feb 15
+// Creative addition: I properly serialized the goal classes, so when loading the proper derived classes are restored by type.
+// Also I shifted scoring to be the responsibility of each derived goal, so they store and calculate their value on the fly.
 using System;
 
 class Program
